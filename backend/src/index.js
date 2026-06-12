@@ -14,6 +14,7 @@ import subscriptionRoutes from './routes/subscriptions.js';
 import aiRoutes from './routes/ai.js';
 import pdfRoutes from './routes/pdf.js';
 import paymentRoutes from './routes/payments.js';
+import tutorialRoutes from './routes/tutorial.js';
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -50,6 +51,7 @@ app.use('/api/subscriptions', subscriptionRoutes);
 app.use('/api/ai', aiRoutes);
 app.use('/api/pdf', pdfRoutes);
 app.use('/api/payments', paymentRoutes);
+app.use('/api/tutorial', tutorialRoutes);
 
 // ---- Error Handler ----
 
